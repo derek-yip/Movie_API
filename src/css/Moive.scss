@@ -1,15 +1,22 @@
-.moive_bar{
-    display: flex;
-    padding: 1em 2em;
+.popular_slider{
     background-color: lightgray;
+    padding: 1.5em 0.5em;
+
+    h1{
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+    }
 }
 .card{
-    margin-right:3rem;
-    white-space: inherit;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+    width: 15vw;
+    height: 100%;
+    padding: 0 1em;
         p{
             font-size: 25px;
             font-weight: bold;
@@ -17,7 +24,7 @@
             text-align:center ;
         }
         img{
+            border-radius: 30px;
             border: 1em transparent;
-            border-radius: 20px;
         }
     }

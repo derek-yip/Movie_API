@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import{useEffect} from 'react';
 import "../css/Moive.scss";
+// import { Splide, SplideSlide,SplideTrack } from '@splidejs/react-splide';
+import '@splidejs/splide/css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
 
 function Popular() {
     const [popular,setPopular]= useState([]);
@@ -19,17 +20,34 @@ const getPopular= async()=>{
 };
 
   return (
-    <div className='moive_bar'>
-        {popular.map(moive=>{
-            return(
-                <div className='card'>
-                        <p>{moive.original_title}</p>
-                    <img src={"https://image.tmdb.org/t/p/w300/"+moive.poster_path} alt={moive.original_title}/>
-                </div>
-            )
-        })}
+    <div className='popular_slider'><h1>Popular Moives</h1>
+    <Splide options={{
+      perPage: 5,
+      perMove: 2,
+      arrows: true,
+      pagination: true,
+      drag: "free",
+      gap: "2em"
+    }} >
 
-    </div>
+      {popular.map(moive => {
+        return (
+
+          <SplideSlide>
+            <div className='card'>
+              <p>{moive.original_title}</p>
+              <img src={"https://image.tmdb.org/t/p/w400/" + moive.poster_path} alt="" />
+            </div>
+          </SplideSlide>
+
+        );
+      })}
+
+    </Splide></div>
+
+    
+
+    
   )
 }
 
