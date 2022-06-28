@@ -7,6 +7,7 @@ function Home() {
   return (
     <div>
         <Searchbar/>
+        hiii
         <Popular/>
         
     </div>
