@@ -1,0 +1,23 @@
+.moive_bar{
+    display: flex;
+    padding: 1em 2em;
+    background-color: lightgray;
+}
+.card{
+    margin-right:3rem;
+    white-space: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+        p{
+            font-size: 25px;
+            font-weight: bold;
+            align-items: center;
+            text-align:center ;
+        }
+        img{
+            border: 1em transparent;
+            border-radius: 20px;
+        }
+    }
