@@ -1,13 +1,11 @@
-import Popular from '../components/Popular'
-import Searchbar from '../components/Searchbar'
-
 import React from 'react'
 import "../global/index.scss"
-
+import SearchHeader from '../components/SearchHeader'
+import Popular from '../components/Popular'
 function Home() {
   return (
-    <div>
-          <Searchbar/>
+    <div className="mainpage_cover">
+          <SearchHeader/>
           <Popular/>
     
     </div>

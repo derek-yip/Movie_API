@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {FaHome} from 'react-icons/fa'
-function BackButton() {
+function HomeButton() {
   return (
 
-    <Link to={`/`}><FaHome className='back_button'/></Link>
+    <Link to={`/`}><FaHome className='home_button'/></Link>
   )
 }
 
-export default BackButton
+export default HomeButton

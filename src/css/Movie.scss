@@ -1,7 +1,29 @@
-.popular_slider{
-    background-color: lightgray;
-    padding: 1.5em 0.5em;
+.mainpage_cover{
+    background-color: black;
+    color: antiquewhite;
+}
+.search_inner{
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6199522045146184) 40%, rgba(0,0,0,1) 100%), url('../pic/moives_header.png');
+    height: 100vh;
+    width: 100vw;
+    .search_bar{
+        
+        input{
+            min-width: 60vw;
+            padding: 0.2em 1em;
+            background-color: rgba(245, 245, 245, 0.333);
+            border: 1px solid transparent;
+            border-radius:5em;
+            font-size: 5em;
+            color: whitesmoke;
+            margin-right: 1em;
+        }
+    }
+}
 
+.popular_slider{
+    padding: 1.5em 0.5em;
     h1{
         font-size: 40px;
         display: flex;
@@ -10,6 +32,7 @@
 }
 .card{
     position: relative;
+    color: antiquewhite;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -68,6 +91,7 @@
     .YouTube{
         padding: 0 4em;
         max-height: 100%;
+        width: 600px;
     }
 }
 

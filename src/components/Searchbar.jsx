@@ -1,9 +1,15 @@
 import React from 'react'
+import {useState,useEffect} from 'react'
 
-function Searchbar() {
+function SearchBar() {
+  const [Search,setSearch]=useState([]) 
+  console.log(Search);
+   
   return (
-    <div>searchbar</div>
+    <div className='search_bar'>
+      <input type="text" onChange={e=>setSearch(e.target.value)}/>
+    </div>
   )
 }
 
-export default Searchbar
+export default SearchBar

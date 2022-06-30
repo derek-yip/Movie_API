@@ -1,6 +1,6 @@
 import React, { useState,useEffect} from 'react'
 import {useParams} from 'react-router-dom'
-import BackButton from '../components/BackButton';
+import HomeButton from '../components/HomeButton';
 import '@splidejs/splide/css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
@@ -39,7 +39,7 @@ useEffect(() => {
             <p>Release Date: {Detail.release_date}</p>
             <p>Movie Overview: </p>
             <p>{Detail.overview} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus perferendis, modi magnam molestias perspiciatis placeat atque dolore, possimus, odio provident nesciunt. Numquam, corporis dolore tempora, magni recusandae illo minima perferendis aspernatur veniam exercitationem ratione rerum voluptatibus itaque illum possimus. Error eveniet repudiandae, amet incidunt beatae mollitia. Praesentium a explicabo consequatur tempora ipsa perspiciatis consequuntur id. Qui laborum dolorum quam mollitia illo neque molestias quod culpa. Fugiat dignissimos corporis nesciunt eos placeat beatae tempore quia minima quis modi? Enim nulla iusto perferendis omnis ex ipsa doloribus, soluta est nisi velit, hic beatae non nobis, at eos laborum debitis atque. Ut, optio.</p>
-            <div className='button_bottom'><BackButton/></div>
+            <div className='button_bottom'><HomeButton/></div>
           </div>
       </div>
 
@@ -47,7 +47,7 @@ useEffect(() => {
       <h1>Related Videos</h1>
       <Splide options={{
         perPage: 3,
-        perMove: 1,
+        perMove: 2,
         arrows: true,
         pagination: true,
         gap: "5em",

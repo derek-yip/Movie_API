@@ -20,7 +20,8 @@ const getPopular= async()=>{
 };
 
   return (
-    <div className='popular_slider'><h1>Popular movies</h1>
+    <div>
+    <div className='popular_slider'><h1>Popular Movies</h1>
     <Splide options={{
       perPage: 5,
       perMove: 2,
@@ -48,6 +49,7 @@ const getPopular= async()=>{
       })}
 
     </Splide></div>
+    </div>
 
     
 
