@@ -1,14 +1,15 @@
 import React from 'react'
 import {MdOutlineManageSearch} from 'react-icons/md'
+import {Link} from "react-router-dom";
 
-function SearchButton() {
-  const SearchKeyword=()=>{
-    console.log("HI");
-  };
+function SearchButton(props) {
+
   return (
     <div>
-        <button className='search_button center_bottom' onClick={SearchKeyword}><MdOutlineManageSearch className='Search_icon'/></button>
-    </div>
+      <Link  style={{textDecoration:'none'}} to={`/search_results/${props.search}`}>
+        <button className='search_button center_bottom' ><MdOutlineManageSearch className='Search_icon'/></button>
+     </Link>
+     </div>
   )
   
 }

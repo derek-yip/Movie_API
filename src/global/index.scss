@@ -16,6 +16,7 @@ h1,h2,h3,h4,h5,button{
 }
 p,span{
     font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
 }
 .center_center{
     display: flex;
@@ -32,20 +33,45 @@ p,span{
     justify-content: center;
     align-items: flex-end;
 }
-.center_top{
+.center_left{
     display: flex;
     justify-content:flex-start;
     align-items: center;
 }
-.top_center{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.bottom_center{
+.center_right{
     display: flex;
     justify-content:flex-end;
     align-items: center;
+}
+.column_center_center{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.column_top_center{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.column_bottom_center{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+}
+.column_center_left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+.column_center_right{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
 }
 .x_even{
     display: flex;
@@ -54,6 +80,18 @@ p,span{
 }
 .x_between{
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.y_even{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.y_between{
+    display: flex;
+    flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
 }

@@ -1,0 +1,23 @@
+.search_result{
+    background-color: black;
+    color: aliceblue;
+    padding: 10em;
+    h1{
+        font-size: 3em;
+    }
+    .search_result_cover{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:5em;
+        .result_card{
+            position: relative;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .bottom_button_cover{
+        min-height: 4em;
+        width: 100%;
+    }
+}

@@ -16,7 +16,7 @@ const getPopular= async()=>{
     const API = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MOVIE_API}&language=en-US&page=1`)
     const data= await API.json();
     setPopular(data.results);
-    console.log(data.results);
+    // console.log(data.results);
 };
 
   return (
