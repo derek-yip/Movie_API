@@ -2,8 +2,12 @@
     background-color: black;
     color: aliceblue;
     padding: 10em;
+    min-height: 100vh;
     h1{
         font-size: 3em;
+        p{
+            font-size: 20px;
+        }
     }
     .search_result_cover{
         display: grid;

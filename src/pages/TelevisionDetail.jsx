@@ -4,7 +4,7 @@ import HomeButton from '../components/HomeButton';
 import '@splidejs/splide/css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-function MovieDetail() {
+function TelevisionDetail() {
   
   const param=useParams();
   const [Detail,setDetail]=useState([]);
@@ -12,12 +12,12 @@ function MovieDetail() {
   
 
   const getDetail= async()=>{
-    const API = await fetch(`https://api.themoviedb.org/3/movie/${param.id}?api_key=${process.env.REACT_APP_MOVIE_API}`);
+    const API = await fetch(`https://api.themoviedb.org/3/tv/${param.id}?api_key=${process.env.REACT_APP_MOVIE_API}`);
     const data= await API.json();
     setDetail(data);
 };
 const getVideo= async()=>{
-  const API = await fetch(`https://api.themoviedb.org/3/movie/${param.id}/videos?api_key=${process.env.REACT_APP_MOVIE_API}`);
+  const API = await fetch(`https://api.themoviedb.org/3/tv/${param.id}/videos?api_key=${process.env.REACT_APP_MOVIE_API}`);
   const data= await API.json();
   setVideo(data.results);
   console.log(data.results)
@@ -69,4 +69,4 @@ useEffect(() => {
   )
 }
 
-export default MovieDetail
+export default TelevisionDetail

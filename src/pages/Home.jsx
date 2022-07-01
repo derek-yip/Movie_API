@@ -1,13 +1,14 @@
 import React from 'react'
-import "../global/index.scss"
+import '../css/Movie.scss'
 import SearchHeader from '../components/SearchHeader'
-import Popular from '../components/Popular'
+import Popular from '../components/sliders/Popular'
+import TelevsionShow from '../components/sliders/TelevisionShow'
 function Home() {
   return (
     <div className="mainpage_cover">
           <SearchHeader/>
           <Popular/>
-    
+          <TelevsionShow/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "../css/Movie.scss";
+import "../../css/Slider.scss";
 import '@splidejs/splide/css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import {Link} from "react-router-dom"
@@ -20,23 +20,25 @@ const getPopular= async()=>{
 };
 
   return (
-    <div>
-    <div className='popular_slider'><h1>Popular Movies</h1>
+    <div className='slider_cover'>
+      <h1 className='center_center'>Popular Movies</h1>
+    <div className='popular_slider center_left'>
     <Splide options={{
-      perPage: 5,
+      perPage: 4,
       perMove: 2,
       arrows: true,
       pagination: true,
       drag: "free",
-      gap: "2em"
+      gap: "2em",
+      rewind:true,
     }} >
 
       {popular.map(movie => {
         return (
 
           <SplideSlide key={movie.id}>
-            <Link  style={{textDecoration:'none', color:'black'}} to={`/movie_detail/${movie.id}`}>
-            <div className='card'>
+            <Link  style={{textDecoration:'none'}} to={`/movie_detail/${movie.id}`}>
+            <div className='card column_center_center'>
               <p>{movie.original_title}</p>
               
               <img src={"https://image.tmdb.org/t/p/w400/" + movie.poster_path} alt="" />
