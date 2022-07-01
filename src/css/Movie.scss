@@ -2,17 +2,21 @@
     background-color: black;
     color: antiquewhite;
 }
-.search_inner{
+.search_cover{
     position: relative;
     background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6199522045146184) 40%, rgba(0,0,0,1) 100%), url('../pic/moives_header.png');
     height: 100vh;
     width: 100vw;
+    h1{
+        color: rgba(255, 255, 255, 0.8);
+        font-size:10em;
+    }
     .search_bar{
         
         input{
             max-width: 50vw;
             padding: 0.2em 1em;
-            background-color: rgba(245, 245, 245, 0.333);
+            background-color: rgba(245, 245, 245, 0.4);
             border: 1px solid transparent;
             border-radius:5em;
             font-size: 3em;
