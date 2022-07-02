@@ -46,13 +46,13 @@ useEffect(() => {
       <div className="video_slider">
       <h1>Related Videos</h1>
       <Splide options={{
-        perPage: 3,
+        perPage: Math.min(Video.length,3),
         perMove: 2,
         arrows: true,
         pagination: true,
         gap: "5em",
         autoplay:"playing",
-        type:"loop"
+        type:"loop",
       }} >
 
         {Video.map(video => {
@@ -61,7 +61,8 @@ useEffect(() => {
               <iframe width="700" height="450" className='YouTube' title='YouTube' src={"https://www.youtube.com/embed/"+video.key+"?controls=0"} frameBorder="0"></iframe>
             </SplideSlide>
           );
-        })}
+        }
+        )}
 
       </Splide>
       </div>
