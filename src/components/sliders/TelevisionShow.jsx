@@ -19,8 +19,17 @@ const getTV= async()=>{
     // console.log(data.results);
 };
 
+const ChangeBackground=(e)=>{
+  var TargetFrom=e.target.src;
+  
+  var TargetTo=document.getElementsByClassName("television_slider_cover");
+  console.log(TargetTo[0]);
+  console.log(TargetFrom);
+  TargetTo[0].style.background=`linear-gradient(180deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%), url(${TargetFrom}) repeat-x`;
+};
+
   return (
-    <div className='slider_cover'>
+    <div className='television_slider_cover'>
       <h1 className='center_center'>Televsion Show</h1>
     <div className='television_slider center_left'>
     <Splide options={{
@@ -41,7 +50,7 @@ const getTV= async()=>{
             <div className='tv_card column_center_center'>
               <p>{tv.original_name}</p>
               
-              <img src={"https://image.tmdb.org/t/p/w400/" + tv.poster_path} alt="" />
+              <img onMouseOver={ChangeBackground} src={"https://image.tmdb.org/t/p/w400/" + tv.poster_path} alt="" />
             
             </div>
             </Link>

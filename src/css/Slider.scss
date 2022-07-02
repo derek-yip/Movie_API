@@ -1,39 +1,44 @@
-.slider_cover{
+.popular_slider_cover,.television_slider_cover{
     padding: 3em;
-    .popular_slider,.television_slider{
-        h1{
-            font-size: 40px;
-        }
+    transition: 1s ease-in-out;
+    h1{
+        font-size: 80px;
+        margin-bottom: 1em;
     }
-    .card,.tv_card{
-        position: relative;
-        color: antiquewhite;
-        width: 20vw;
-        transition: 1.5s ease-in-out;
-        &:hover{
+    .popular_slider,.television_slider{
+        
+        .card,.tv_card{
+            position: relative;
             z-index: 1;
-            transform: scale(1.2) ;
+            color: antiquewhite;
+            width: 20vw;
+            transition: 1.5s ease-in-out;
+            &:hover{
+                z-index: 1;
+                transform: scale(1.2) ;
+                
+                } 
             &:hover p{
-                transform:translateY(-3em);
-                visibility: hidden;
-            } 
-        }
-            p{
-                font-size: 1.5em;
-                font-weight: bold;
-                text-align:center ;
-                transition: .5s ease-in-out;
-                height: 3em;
+                    transform:translateY(-3em);
+                    visibility: hidden;
             }
-            img{
-                max-width: 100%;
-                max-height: 100%;
-                border-radius: 30px;
-                border: 1em transparent;
+                p{
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    text-align:center ;
+                    transition: .5s ease-in-out;
+                    height: 3em;
+                }
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-radius: 30px;
+                    border: 1em transparent;
+                }
             }
+        .tv_card{
+            width: 15vw;
         }
-    .tv_card{
-        width: 15vw;
     }
 }
 .video_slider{

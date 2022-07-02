@@ -19,8 +19,16 @@ const getPopular= async()=>{
     // console.log(data.results);
 };
 
+const ChangeBackground=(e)=>{
+  var TargetFrom=e.target.src;
+  
+  var TargetTo=document.getElementsByClassName("popular_slider_cover");
+  console.log(TargetFrom);
+  TargetTo[0].style.background=`linear-gradient(180deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%), url(${TargetFrom}) repeat-x`;
+};
+
   return (
-    <div className='slider_cover'>
+    <div className='popular_slider_cover'>
       <h1 className='center_center'>Popular Movies</h1>
     <div className='popular_slider center_left'>
     <Splide options={{
@@ -31,17 +39,17 @@ const getPopular= async()=>{
       drag: "free",
       gap: "2em",
       rewind:true,
-    }} >
+    }} className="Splide">
 
       {popular.map(movie => {
         return (
 
-          <SplideSlide key={movie.id}>
-            <Link  style={{textDecoration:'none'}} to={`/movie_detail/${movie.id}`}>
+          <SplideSlide key={movie.id} >
+            <Link style={{textDecoration:'none'}} to={`/movie_detail/${movie.id}`} >
             <div className='card column_center_center'>
               <p>{movie.original_title}</p>
               
-              <img src={"https://image.tmdb.org/t/p/w400/" + movie.poster_path} alt="" />
+              <img src={"https://image.tmdb.org/t/p/w400" + movie.poster_path} alt="" onMouseOver={ChangeBackground}/>
             
             </div>
             </Link>
