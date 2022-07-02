@@ -21,7 +21,7 @@ const getVideo= async()=>{
   const data= await API.json();
   setVideo(data.results);
 };
-console.log(Detail);
+
 useEffect(() => {
   getDetail();
   getVideo();
