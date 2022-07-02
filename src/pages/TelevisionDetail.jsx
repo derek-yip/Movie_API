@@ -21,7 +21,7 @@ const getVideo= async()=>{
   const data= await API.json();
   setVideo(data.results);
 };
-
+console.log(Detail);
 useEffect(() => {
   getDetail();
   getVideo();
@@ -33,7 +33,7 @@ useEffect(() => {
         <div className='detail_cover x_between'>
             <img src={"https://image.tmdb.org/t/p/w400/" + Detail.poster_path} alt="" />
             <div className="detail_right">
-              <h1>{Detail.title}</h1>
+              <h1>{Detail.name}</h1>
               <p>Average Score: {Detail.vote_average} /10</p>
               <p>Release Date: {Detail.release_date}</p>
               <p>Movie Overview: </p>
@@ -51,7 +51,7 @@ useEffect(() => {
         <div className='detail_cover x_between'>
             <img src={"https://image.tmdb.org/t/p/w400/" + Detail.poster_path} alt="" />
             <div className="detail_right">
-              <h1>{Detail.title}</h1>
+              <h1>{Detail.name}</h1>
               <p>Average Score: {Detail.vote_average} /10</p>
               <p>Release Date: {Detail.release_date}</p>
               <p>Movie Overview: </p>
