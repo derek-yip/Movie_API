@@ -46,7 +46,7 @@ useEffect(() => {
       <div className="video_slider">
       <h1>Related Videos</h1>
       <Splide options={{
-        perPage: 3,
+        perPage: Math.min(Video.length,3),
         perMove: 2,
         arrows: true,
         pagination: true,
