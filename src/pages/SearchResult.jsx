@@ -33,6 +33,7 @@ function SearchResult() {
         <h1>Search Found : {Searcher.length} result(s) <p>[From keywords: {params.search}]</p></h1>
           <div className="search_result_cover">
           {Searcher.map(results=>{
+            if(results.poster_path&&results.title&&results.vote_average&&results.release_date&&results.overview){
             return(
               <div className='result_card' key={results.id}>
                 <img src={"https://image.tmdb.org/t/p/w400/" + results.poster_path} alt="" />
@@ -45,7 +46,9 @@ function SearchResult() {
                 </div>
             </div>
             )
-          })
+          }
+        }
+          )
           }
             
           </div>
