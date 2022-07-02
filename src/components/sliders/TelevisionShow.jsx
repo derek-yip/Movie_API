@@ -16,15 +16,12 @@ const getTV= async()=>{
     const API = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${process.env.REACT_APP_MOVIE_API}&language=en-US&page=1`)
     const data= await API.json();
     setTV(data.results);
-    // console.log(data.results);
 };
 
 const ChangeBackground=(e)=>{
   var TargetFrom=e.target.src;
   
   var TargetTo=document.getElementsByClassName("television_slider_cover");
-  console.log(TargetTo[0]);
-  console.log(TargetFrom);
   TargetTo[0].style.background=`linear-gradient(180deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%), url(${TargetFrom}) repeat-x`;
 };
 

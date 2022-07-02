@@ -20,7 +20,6 @@ const getVideo= async()=>{
   const API = await fetch(`https://api.themoviedb.org/3/tv/${param.id}/videos?api_key=${process.env.REACT_APP_MOVIE_API}`);
   const data= await API.json();
   setVideo(data.results);
-  console.log(data.results)
 };
 
 useEffect(() => {

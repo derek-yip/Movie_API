@@ -16,7 +16,6 @@ function SearchResult() {
       const SearchData=await SearchAPI.json();
       setSearcher(SearchData.results);
     }
-    console.log(Searcher,params.search,Searcher.length);
     if (params.search==="undefined"||Searcher.length===0) {
       return(
         <div className='search_result column_top_center'>
