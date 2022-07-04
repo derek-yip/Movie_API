@@ -8,6 +8,7 @@ function SearchBar() {
     <div className='search_bar center_center'>
       <input type="text" onChange={e=>setSearch(e.target.value)}/>
       <SearchButton search={Search}/>
+      <p>text</p>
     </div>
   )
 }
