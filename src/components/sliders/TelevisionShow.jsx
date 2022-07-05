@@ -30,12 +30,26 @@ const ChangeBackground=(e)=>{
       <h1 className='center_center'>Televsion Show</h1>
     <div className='television_slider center_left'>
     <Splide options={{
-      perPage: 5,
-      perMove: 5,
+      breakpoints: {
+        640: {
+          perPage: 1,
+          perMove:1,
+          gap:"0em",
+        },
+        1024: {
+          perPage: 3,
+          perMove:3,
+          gap:".5em",
+        },
+        1440: {
+          perPage: 5,
+          perMove:5,
+          gap:"2em",
+        },
+      },
       arrows: true,
       pagination: true,
       drag: "free",
-      gap: "2em",
       rewind:true,
     }} >
 

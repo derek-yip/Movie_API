@@ -8,6 +8,7 @@ import SearchResult from './pages/SearchResult'
 import TelevisionDetail from './pages/TelevisionDetail'
 
 function Main() {
+  
   return (
     <BrowserRouter>
         <Routes>

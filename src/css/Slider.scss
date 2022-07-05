@@ -1,3 +1,7 @@
+$pc:1440px;
+$labtop:1024px;
+$mobile:640px;
+
 .popular_slider_cover,.television_slider_cover{
     padding: 3em;
     transition: 1s ease-in-out;
@@ -53,5 +57,28 @@
     .YouTube{
         max-height: 80%;
         max-width: 100%;
+    }
+}
+
+@media only screen and (min-width:$mobile) and (max-width:$labtop){
+    .popular_slider_cover,.television_slider_cover{
+        .popular_slider,.television_slider{
+        .card{
+            width: 25vw;
+            }
+        .tv_card{
+            width: 27vw;
+        }
+        }
+    }
+    
+}
+@media (max-width:$mobile){
+    .popular_slider_cover,.television_slider_cover{
+        .popular_slider,.television_slider{
+        .card,.tv_card{
+            width: 85vw;
+            }
+        }
     }
 }

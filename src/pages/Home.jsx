@@ -4,6 +4,7 @@ import SearchHeader from '../components/SearchHeader'
 import Popular from '../components/sliders/Popular'
 import TelevsionShow from '../components/sliders/TelevisionShow'
 
+
 function Home() {
   
   return (
