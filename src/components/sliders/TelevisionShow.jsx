@@ -41,7 +41,7 @@ const ChangeBackground=(e)=>{
           perMove:3,
           gap:".5em",
         },
-        1440: {
+        1920: {
           perPage: 5,
           perMove:5,
           gap:"2em",

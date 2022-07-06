@@ -42,7 +42,7 @@ function Popular() {
           perMove:3,
           gap:"1em",
         },
-        1440: {
+        1920: {
           perPage: 4,
           perMove:4,
           gap:"2em",
@@ -60,7 +60,7 @@ function Popular() {
           <SplideSlide key={movie.id} >
             <Link style={{textDecoration:'none'}} to={`/movie_detail/${movie.id}`} >
             <div className='card column_center_center'>
-              <p>{movie.original_title}</p>
+              <p className='bottom_center'>{movie.original_title}</p>
               
               <img src={"https://image.tmdb.org/t/p/w400" + movie.poster_path} alt="" onMouseOver={ChangeBackground}/>
             

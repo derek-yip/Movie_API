@@ -1,4 +1,4 @@
-$pc:1440px;
+$pc:1920px;
 $labtop:1024px;
 $mobile:640px;
 
@@ -27,11 +27,12 @@ $mobile:640px;
                     visibility: hidden;
             }
                 p{
-                    font-size: 1.2em;
+                    font-size: 2em;
                     font-weight: bold;
                     text-align:center ;
                     transition: .5s ease-in-out;
-                    height: 3em;
+                    min-height: 3em;
+                    margin-bottom:1em;
                 }
                 img{
                     max-width: 100%;
@@ -59,8 +60,22 @@ $mobile:640px;
         max-width: 100%;
     }
 }
+@media screen and (min-width:$labtop) and (max-width:$pc){
+    .popular_slider_cover,.television_slider_cover{
+        .popular_slider,.television_slider{
+        .card{
+            width: 20vw;
+            
+            }
+        .tv_card{
+            width: 15vw;
+            
+        }
+        }
+    }
+}
 
-@media only screen and (min-width:$mobile) and (max-width:$labtop){
+@media (min-width:$mobile) and (max-width:$labtop){
     .popular_slider_cover,.television_slider_cover{
         .popular_slider,.television_slider{
         .card{
@@ -75,6 +90,7 @@ $mobile:640px;
 }
 @media (max-width:$mobile){
     .popular_slider_cover,.television_slider_cover{
+        
         .popular_slider,.television_slider{
         .card,.tv_card{
             width: 85vw;
