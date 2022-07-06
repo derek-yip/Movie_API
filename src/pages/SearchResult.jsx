@@ -34,14 +34,14 @@ function SearchResult() {
           {Searcher.map(results=>{
             if(results.poster_path&&results.title&&results.vote_average&&results.release_date&&results.overview){
             return(
-              <div className='result_card' key={results.id}>
+              <div className='result_card ' key={results.id}>
                 <img src={"https://image.tmdb.org/t/p/w400/" + results.poster_path} alt="" />
-                <div>
+                <div className='result_content'>
                   <h1>{results.title}</h1>
                   <p>Average Score: {results.vote_average} /10</p>
                   <p>Release Date: {results.release_date}</p>
                   <p>Movie Overview: </p>
-                  <p>{results.overview} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus perferendis, modi magnam molestias perspiciatis placeat atque dolore, possimus, odio provident nesciunt. Numquam, corporis dolore tempora, magni recusandae illo minima perferendis aspernatur veniam exercitationem ratione rerum voluptatibus itaque illum possimus. Error eveniet repudiandae, amet incidunt beatae mollitia. Praesentium a explicabo consequatur tempora ipsa perspiciatis consequuntur id. Qui laborum dolorum quam mollitia illo neque molestias quod culpa. Fugiat dignissimos corporis nesciunt eos placeat beatae tempore quia minima quis modi? Enim nulla iusto perferendis omnis ex ipsa doloribus, soluta est nisi velit, hic beatae non nobis, at eos laborum debitis atque. Ut, optio.</p>
+                  <p >{results.overview} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus perferendis, modi magnam molestias perspiciatis placeat atque dolore, possimus, odio provident nesciunt. Numquam, corporis dolore tempora, magni recusandae illo minima perferendis aspernatur veniam exercitationem ratione rerum voluptatibus itaque illum possimus. Error eveniet repudiandae, amet incidunt beatae mollitia. Praesentium a explicabo consequatur tempora ipsa perspiciatis consequuntur id. Qui laborum dolorum quam mollitia illo neque molestias quod culpa. Fugiat dignissimos corporis nesciunt eos placeat beatae tempore quia minima quis modi? Enim nulla iusto perferendis omnis ex ipsa doloribus, soluta est nisi velit, hic beatae non nobis, at eos laborum debitis atque. Ut, optio.</p>
                 </div>
             </div>
             )

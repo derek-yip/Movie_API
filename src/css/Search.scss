@@ -9,6 +9,7 @@ $mobile:640px;
     min-height: 100vh;
     h1{
         font-size: 3em;
+        margin-bottom: 1em;
         p{
             font-size: 20px;
         }
@@ -22,10 +23,66 @@ $mobile:640px;
             img{
                 width: 100%;
             }
+            p{
+                margin-bottom: 1em;
+            }
         }
     }
     .bottom_button_cover{
         min-height: 4em;
         width: 100%;
+    }
+}
+
+@media screen and (min-width:$labtop){
+    
+}
+
+@media (min-width:$mobile) and (max-width:$labtop){
+    .search_result{
+        padding: 5em;
+        h1{
+            font-size: 2em;
+            p{
+                font-size: 15px;
+            }
+        }
+        .search_result_cover{
+            grid-template-columns: repeat(2,1fr);
+            .result_card{
+                position: relative;
+                .result_content{
+                    max-height: 400px;
+                    overflow: scroll;
+                    &::-webkit-scrollbar-track{
+                        width: 5px;
+                    }
+                    p{
+                        margin-bottom: 1em;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:$mobile) {
+    .search_result{
+        padding: 5em;
+        h1{
+            font-size: 2em;
+            p{
+                font-size: 15px;
+            }
+        }
+        .search_result_cover{
+            grid-template-columns: repeat(2,1fr);
+            .result_card{
+                position: relative;
+                p{
+                    margin-bottom: 1em;
+                }
+            }
+        }
     }
 }
