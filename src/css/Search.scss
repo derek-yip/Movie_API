@@ -20,10 +20,11 @@ $mobile:640px;
         gap:5em;
         .result_card{
             position: relative;
-            .result_content{
-                img{
+            img{
                 width: 100%;
                 }
+            .result_content{
+                
                 p{
                     margin-bottom: 1em;
                     font-size: 15px;
@@ -68,9 +69,11 @@ $mobile:640px;
     .search_result{
         padding: 5em;
         h1{
-            font-size: 2em;
+            text-align: center;
+            font-size: 3em;
             p{
-                font-size: 15px;
+                font-size: 20x;
+                text-align: center;
             }
         }
         .search_result_cover{
@@ -79,7 +82,7 @@ $mobile:640px;
                 position: relative;
                 .result_content{
                     p{
-                        font-size: 15px;
+                        font-size: 20px;
                     }
                 }
             }
