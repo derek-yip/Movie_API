@@ -106,20 +106,24 @@ p,span{
 }
 
 .search_button{
-    font-size: 2em;
-    padding: 0.3em.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    margin: 0 10px;
     border: 1px solid transparent;
     border-radius: 20px; 
     background-color: transparent;
     color: white;
-    transform: scale(0.5);
+    transform: scale(1);
     transition: 1s ease-in-out transform;
     &:hover{
-        transform: scale(1);
+        transform: scale(1.2);
     }
     .Search_icon{
-        width: 3em;
-        height: 3em;
+        font-size: 2em;
+        width: 2em;
+        height: 2em;
     }
 }
 

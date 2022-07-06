@@ -8,6 +8,7 @@ $mobile:640px;
     h1{
         font-size: 80px;
         margin-bottom: 1em;
+        text-align: center;
     }
     .popular_slider,.television_slider{
         
@@ -29,10 +30,10 @@ $mobile:640px;
                 p{
                     font-size: 2em;
                     font-weight: bold;
-                    text-align:center ;
+                    text-align: center;
                     transition: .5s ease-in-out;
-                    min-height: 3em;
-                    margin-bottom:1em;
+                    min-height: 4em;
+                    margin-bottom: 1em;
                 }
                 img{
                     max-width: 100%;
@@ -90,7 +91,7 @@ $mobile:640px;
 }
 @media (max-width:$mobile){
     .popular_slider_cover,.television_slider_cover{
-        
+        h1{margin: 0;}
         .popular_slider,.television_slider{
         .card,.tv_card{
             width: 85vw;

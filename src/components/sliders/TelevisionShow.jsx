@@ -59,7 +59,7 @@ const ChangeBackground=(e)=>{
           <SplideSlide key={tv.id}>
             <Link  style={{textDecoration:'none'}} to={`/tv_detail/${tv.id}`}>
             <div className='tv_card column_center_center'>
-              <p>{tv.original_name}</p>
+              <p className='bottom_center'>{tv.original_name}</p>
               
               <img onMouseOver={ChangeBackground} src={"https://image.tmdb.org/t/p/w400/" + tv.poster_path} alt="" />
             

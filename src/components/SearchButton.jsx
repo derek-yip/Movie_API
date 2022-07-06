@@ -7,7 +7,7 @@ function SearchButton(props) {
   return (
     <div>
       <Link  style={{textDecoration:'none'}} to={`/search_results/${props.search}`}>
-        <button className='search_button center_bottom' ><MdOutlineManageSearch className='Search_icon'/></button>
+        <button className='search_button' ><MdOutlineManageSearch className='Search_icon'/></button>
      </Link>
      </div>
   )
