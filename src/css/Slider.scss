@@ -53,7 +53,7 @@ $mobile:640px;
     color: aliceblue;
     padding: 0 3em;
     h1{
-        margin: 1em 2em;
+        margin: 1em 0px;
         font-size: 2em;
     }
     .YouTube{
@@ -85,6 +85,17 @@ $mobile:640px;
         .tv_card{
             width: 27vw;
         }
+        }
+    }
+    .video_slider{
+        padding: 0 2em;
+        h1{
+            margin: .5em 0 ;
+            font-size: 2em;
+        }
+        .YouTube{
+            max-height: 60%;
+            max-width: 100%;
         }
     }
     

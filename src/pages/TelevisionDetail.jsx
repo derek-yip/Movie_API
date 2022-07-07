@@ -30,9 +30,9 @@ useEffect(() => {
   if(Video.length===0){
     return (
       <div>
-        <div className='detail_cover x_between'>
+        <div className='detail_cover x_even'>
             <img src={"https://image.tmdb.org/t/p/w400/" + Detail.poster_path} alt="" />
-            <div className="detail_right">
+            <div className="detail">
               <h1>{Detail.name}</h1>
               <p>Average Score: {Detail.vote_average} /10</p>
               <p>Release Date: {Detail.release_date}</p>
@@ -50,7 +50,7 @@ useEffect(() => {
       <div>
         <div className='detail_cover x_between'>
             <img src={"https://image.tmdb.org/t/p/w400/" + Detail.poster_path} alt="" />
-            <div className="detail_right">
+            <div className="detail">
               <h1>{Detail.name}</h1>
               <p>Average Score: {Detail.vote_average} /10</p>
               <p>Release Date: {Detail.release_date}</p>
@@ -63,13 +63,24 @@ useEffect(() => {
         <div className="video_slider">
         <h1>Related Videos</h1>
         <Splide options={{
-          perPage: Math.min(Video.length,3),
-          perMove: 2,
-          arrows: true,
-          pagination: true,
-          gap: "5em",
-          autoplay:"playing",
-          type:"loop"
+        breakpoints:{
+          640: {
+            perPage: Math.min(Video.length,1),
+            perMove: 1,
+          },
+          1024: {
+            perPage: Math.min(Video.length,2),
+            perMove: 2,
+          },
+          1920: {
+            perPage: Math.min(Video.length,3),
+            perMove: 2,
+          },
+        },
+        arrows: true,
+        pagination: true,
+        gap: "5em",
+        type:"loop",
         }} >
 
           {Video.map(video => {

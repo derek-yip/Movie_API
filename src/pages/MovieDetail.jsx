@@ -47,9 +47,9 @@ if(Video.length===0){
   else{
   return (
     <div>
-      <div className='detail_cover x_between'>
+      <div className='detail_cover x_even'>
           <img src={"https://image.tmdb.org/t/p/w400/" + Detail.poster_path} alt="" />
-          <div className="detail_right">
+          <div className="detail">
             <h1>{Detail.title}</h1>
             <p>Average Score: {Detail.vote_average} /10</p>
             <p>Release Date: {Detail.release_date}</p>
@@ -62,19 +62,30 @@ if(Video.length===0){
       <div className="video_slider">
       <h1>Related Videos</h1>
       <Splide options={{
-        perPage: Math.min(Video.length,3),
-        perMove: 2,
+        breakpoints:{
+          640: {
+            perPage: Math.min(Video.length,1),
+            perMove: 1,
+          },
+          1024: {
+            perPage: Math.min(Video.length,2),
+            perMove: 2,
+          },
+          1920: {
+            perPage: Math.min(Video.length,3),
+            perMove: 2,
+          },
+        },
         arrows: true,
         pagination: true,
         gap: "5em",
-        autoplay:"playing",
         type:"loop",
       }} >
 
         {Video.map(video => {
           return (
             <SplideSlide key={video.id}>
-              <iframe width="700" height="450" className='YouTube' title='YouTube' src={"https://www.youtube.com/embed/"+video.key+"?controls=0"} frameBorder="0"></iframe>
+              <iframe width="600" height="550" className='YouTube' title='YouTube' src={"https://www.youtube.com/embed/"+video.key+"?controls=0"} frameBorder="0"></iframe>
             </SplideSlide>
           );
         }
