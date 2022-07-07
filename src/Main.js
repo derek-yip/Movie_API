@@ -13,6 +13,7 @@ function Main() {
     <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/Movie_API/" element={<Home/>}/>
           <Route path="/movie_detail/:id" element={<MovieDetail/>}/>
           <Route path="/tv_detail/:id" element={<TelevisionDetail/>}/>
           <Route path="/search_results/:search" element={<SearchResult/>}/>
