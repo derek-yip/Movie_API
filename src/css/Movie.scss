@@ -74,7 +74,7 @@ $mobile:640px;
         }
         .detail{
             h1{
-                font-size: 2.5em;
+                font-size: 3em;
             }
             p{
                 font-size: .8em;
@@ -91,6 +91,7 @@ $mobile:640px;
         }
     }
     .detail_cover{
+        padding: 2em;
         flex-direction: column;
         img{
             width: 100%;
@@ -101,7 +102,7 @@ $mobile:640px;
                 font-size: 2.5em;
             }
             p{
-                font-size: .5em;
+                font-size: 1em;
             }
         }
     }
