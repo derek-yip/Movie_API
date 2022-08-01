@@ -67,7 +67,7 @@ if(Video.length===0){
             perPage: Math.min(Video.length,1),
             perMove: 1,
           },
-          1024: {
+          1024: { 
             perPage: Math.min(Video.length,2),
             perMove: 2,
           },

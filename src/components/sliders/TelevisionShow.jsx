@@ -46,6 +46,11 @@ const ChangeBackground=(e)=>{
           perMove:5,
           gap:"2em",
         },
+        3000: {
+          perPage: 5,
+          perMove:5,
+          gap:"2em",
+        }
       },
       arrows: true,
       pagination: true,

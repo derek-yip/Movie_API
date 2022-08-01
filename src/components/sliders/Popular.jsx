@@ -47,6 +47,11 @@ function Popular() {
           perMove:4,
           gap:"2em",
         },
+        3000: {
+          perPage: 4,
+          perMove:4,
+          gap:"2em",
+        }
       },
       arrows: true,
       pagination: true,
