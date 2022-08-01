@@ -7,6 +7,8 @@ MOIVE_API is a pure front-end responsive movie searcher website that called data
 
 ## Live Demo
 https://derek-y1106.github.io/Movie_API/
+
+## Picture Demo
 ![image](https://user-images.githubusercontent.com/101183496/182090489-1ab8727c-95c5-4235-a378-d398de8e8f7a.png)
 ![image](https://user-images.githubusercontent.com/101183496/182090507-591444ba-a30b-4152-b9d6-743d2b4c31b1.png)
 ![image](https://user-images.githubusercontent.com/101183496/182090522-2872d088-8c95-4550-829f-a0f91fca6718.png)
@@ -15,29 +17,32 @@ https://derek-y1106.github.io/Movie_API/
 
 ## Technique Skill
 
-Front-End language
-•	React JS
-•	SCSS
-•	JavaScript
-Libraries
-•	react-splide
-•	react-icon
+**Front-End language**
+
+- React JS
+-	SCSS
+-	JavaScript
+
+**Libraries**
+-	react-splide
+-	react-icon
 
 ## Getting Started
 1. Download/ Clone Project in Github
 git clone https://github.com/Derek-Y1106/Movie_API.git
 
 2. Register Account on MovieDB and Create API
-![image](https://user-images.githubusercontent.com/101183496/182090798-26d41e1e-3c72-46b4-942b-ec954317f965.png)
+
+**![image](https://user-images.githubusercontent.com/101183496/182090798-26d41e1e-3c72-46b4-942b-ec954317f965.png)**
 
 3. Create a file (.env) inside source path (src file) and input:
 
 ![image](https://user-images.githubusercontent.com/101183496/182090813-9ae61cda-69a5-4a38-b5d0-ad17e1f8850c.png)
 
 4. Run the code on Terminal to start project
-
+```
 npm install
 npm start
-
+```
 ## Project Overview
 ![image](https://user-images.githubusercontent.com/101183496/182090926-73196853-483c-4451-971a-7811b5616abe.png)
