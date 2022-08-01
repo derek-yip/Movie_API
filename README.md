@@ -5,7 +5,7 @@
 
 MOIVE_API is a pure front-end responsive movie searcher website that called data from API of The Movie Database (TMDB). The concept of website is to show and search the latest movie review from audience. The detail of movie including movie trailers, film summary and score rating is fetched from The Movie Database (TMDB)’s API. This website contains searching function for online user to look for specialized movie by keywords or movie names.
 
-##Live Demo
+## Live Demo
 https://derek-y1106.github.io/Movie_API/
 ![image](https://user-images.githubusercontent.com/101183496/182090489-1ab8727c-95c5-4235-a378-d398de8e8f7a.png)
 ![image](https://user-images.githubusercontent.com/101183496/182090507-591444ba-a30b-4152-b9d6-743d2b4c31b1.png)
@@ -13,7 +13,7 @@ https://derek-y1106.github.io/Movie_API/
 ![image](https://user-images.githubusercontent.com/101183496/182090548-f4b0a63a-42fc-4b11-aa4b-f9a0fef5ff75.png)
 ![image](https://user-images.githubusercontent.com/101183496/182090562-7e87e52b-61b5-45ad-affd-da9d796271b4.png)
 
-##Technique Skill
+## Technique Skill
 
 Front-End language
 •	React JS
@@ -23,7 +23,7 @@ Libraries
 •	react-splide
 •	react-icon
 
-Getting Started
+## Getting Started
 1. Download/ Clone Project in Github
 git clone https://github.com/Derek-Y1106/Movie_API.git
 
@@ -39,5 +39,5 @@ git clone https://github.com/Derek-Y1106/Movie_API.git
 npm install
 npm start
 
-##Project Overview
+## Project Overview
 ![image](https://user-images.githubusercontent.com/101183496/182090926-73196853-483c-4451-971a-7811b5616abe.png)
