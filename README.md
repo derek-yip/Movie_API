@@ -3,7 +3,7 @@
 
 ## Introduction
 
-MOIVE_API is a pure front-end responsive movie searcher website that called data from API of The Movie Database (TMDB). The concept of website is to show and search the latest movie review from audience. The detail of movie including movie trailers, film summary and score rating is fetched from The Movie Database (TMDB)’s API. This website contains searching function for online user to look for specialized movie by keywords or movie names.
+MOIVE_API is a pure front-end responsive movie searcher website that called data from API of [The Movie Database (TMDB)](https://www.themoviedb.org/). The concept of website is to show and search the latest movie review from audience. The detail of movie including movie trailers, film summary and score rating is fetched from [The Movie Database (TMDB)](https://www.themoviedb.org/)’s API. This website contains searching function for online user to look for specialized movie by keywords or movie names.
 
 ## Live Demo
 https://derek-y1106.github.io/Movie_API/
@@ -19,19 +19,21 @@ https://derek-y1106.github.io/Movie_API/
 
 **Front-End language**
 
-- React JS
--	SCSS
+- [React JS](https://reactjs.org/)
+-	[SCSS](https://sass-lang.com/)
 -	JavaScript
 
 **Libraries**
--	react-splide
--	react-icon
+-	[react-splide](https://splidejs.com/integration/react-splide/)
+-	[react-icon](https://react-icons.github.io/react-icons/)
 
 ## Getting Started
 1. Download/ Clone Project in Github
+```
 git clone https://github.com/Derek-Y1106/Movie_API.git
+```
 
-2. Register Account on MovieDB and Create API
+2. Register Account on [MovieDB](https://www.themoviedb.org/) and Create API
 
 **![image](https://user-images.githubusercontent.com/101183496/182090798-26d41e1e-3c72-46b4-942b-ec954317f965.png)**
 
