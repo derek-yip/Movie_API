@@ -15,7 +15,7 @@ https://derek-y1106.github.io/Movie_API/
 ![image](https://user-images.githubusercontent.com/101183496/182090548-f4b0a63a-42fc-4b11-aa4b-f9a0fef5ff75.png)
 ![image](https://user-images.githubusercontent.com/101183496/182090562-7e87e52b-61b5-45ad-affd-da9d796271b4.png)
 
-## Technique Skill
+## Techniques
 
 **Front-End language**
 
