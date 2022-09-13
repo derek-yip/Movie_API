@@ -6,7 +6,7 @@
 MOIVE_API is a pure front-end responsive movie searcher website that called data from API of [The Movie Database (TMDB)](https://www.themoviedb.org/). The concept of website is to show and search the latest movie review from audience. The detail of movie including movie trailers, film summary and score rating is fetched from [The Movie Database (TMDB)](https://www.themoviedb.org/)’s API. This website contains searching function for online user to look for specialized movie by keywords or movie names.
 
 ## Live Demo
-https://derek-y1106.github.io/Movie_API/
+https://derek-yip.github.io/Movie_API/
 
 ## Picture Demo
 ![image](https://user-images.githubusercontent.com/101183496/182090489-1ab8727c-95c5-4235-a378-d398de8e8f7a.png)
