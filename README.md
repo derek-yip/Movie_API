@@ -30,7 +30,7 @@ https://derek-y1106.github.io/Movie_API/
 ## Getting Started
 1. Download/ Clone Project in Github
 ```
-git clone https://github.com/Derek-Y1106/Movie_API.git
+git clone https://github.com/derek-yip/Movie_API.git
 ```
 
 2. Register Account on [MovieDB](https://www.themoviedb.org/) and Create API
