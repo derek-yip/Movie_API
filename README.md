@@ -48,3 +48,8 @@ npm start
 ```
 ## Project Overview
 ![image](https://user-images.githubusercontent.com/101183496/182090926-73196853-483c-4451-971a-7811b5616abe.png)
+
+## License
+
+MOVIE_API is available under the [MIT license](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the tool according to the terms of the license.
+
